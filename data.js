@@ -18,12 +18,12 @@ export let data = [
                 correct: false,
             },
             {
-                id: '3',
+                id: '100',
                 value: 'можно во всех перечисленных',
                 correct: true,
             },
             {
-                id: '3',
+                id: '101',
                 value: 'прикладное программное обеспечение',
                 correct: false,
             },
