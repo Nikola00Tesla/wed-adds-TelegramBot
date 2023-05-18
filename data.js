@@ -31,7 +31,7 @@ export let data = [
     },
     {
         question: `Какое количество сообщений будет выведено в консоль?\n
-            for(var i = 10; i < 35; i += 5) {\n
+            for(var i = 10; i < 35; i += 5)\n {
                 console.log(i);
         }
         `,
