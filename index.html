@@ -4,46 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Ответь на вопрос</h1>
-    <form action="handler.php">
-        <p><b>Как по вашему мнению расшифровывается аббревиатура &quot;ОС&quot;?</b></p>
-        <p><input type="radio" name="answer" value="a1">Офицерский состав<Br>
-        <input type="radio" name="answer" value="a2">Операционная система<Br>
-        <input type="radio" name="answer" value="a3">Большой полосатый мух</p>
-        
-        <p><b>Как выглядит общий вид условия?</b></p>
-        <p><input type="radio" name="answer" value="a1">if условие then оператор1 else оператор2<Br>
-        <input type="radio" name="answer" value="a2">if (условие) {оператор}<Br>
-        <input type="radio" name="answer" value="a3">if условие begin оператор</p>
-       
-        <p><b>Как выглядит оператор больше или равно?</b></p>
-        <p><input type="radio" name="answer" value="a1">>=<Br>
-        <input type="radio" name="answer" value="a2">=><Br>
-        <input type="radio" name="answer" value="a3">> or =</p>
-        
-        <p><b>Как выглядит оператор не равно?</b></p>
-        <p><input type="radio" name="answer" value="a1">!=<Br>
-        <input type="radio" name="answer" value="a2">not=<Br>
-        <input type="radio" name="answer" value="a3">=!</p>
+    <div class="quiz" id="quiz">
+        <div class="quiz-questions" id="questions"></div>
 
-        <p><b>Для чего нужен оператор else?</b></p>
-        <p><input type="radio" name="answer" value="a1">Он завершает условную конструкцию<Br>
-        <input type="radio" name="answer" value="a2">Операция записанная после него выполняется в случае если условие выполняется<Br>
-        <input type="radio" name="answer" value="a3">Операция записанная после него выполняется в случае если условие не выполняется</p>
+        <div class="quiz-results" id="results">
+            <div class="quiz-results-item">
+                <div class="quiz-results-item__question">Вопрос 1</div>
+                <ul class="quiz-results-item__answers">
+                    <li>Ответ 1</li>
+                    <li>Ответ 2</li>
+                </ul>
+            </div>
+        </div>
 
-        <p><b>Как выглядит оператор «ИЛИ»?</b></p>
-        <p><input type="radio" name="answer" value="a1">OR<Br>
-        <input type="radio" name="answer" value="a2">AND<Br>
-        <input type="radio" name="answer" value="a3">||</p>
+        <div class="quiz-indicator" id="indicator">1/10</div>
+        <div class="quiz-controls">
+            <button class="btn-next" id="btn-next" disabled>Далее</button>
+            <button class="btn-restart" id="btn-restart">С начало</button>
+        </div>
 
-        <p><b>Что такое вложенные ветвления?</b></p>
-        <p><input type="radio" name="answer" value="a1">Это когда после begin снова идет условный оператор<Br>
-        <input type="radio" name="answer" value="a2">Когда в программе имеется несколько условных операторов<Br>
-        <input type="radio" name="answer" value="a3">Когда условный оператор включен в цикл</p>
-
-        <p><input type="submit"></p>
-    </form>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
